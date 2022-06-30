@@ -1,0 +1,26 @@
+<div class="form-group">
+    <label for="number">Number</label>
+    <input type="text" [(ngModel)]="number" class="form-control" id="number">
+</div>
+<br>
+<div>
+    <p>Sem formatação:</p>
+    <p>{{number |number}}</p>
+
+    <p>Resultado com formatação:</p>
+    <p>{{number |number:'2.0-9'}}</p>
+
+    <p>Resultado em moeda:</p>
+    <p>{{number |currency:'BRL'}}</p>
+
+    <p>{{text | uppercase}}</p>
+    <br>
+    <p>{{text | slice:2:4 }}</p>
+    <br>
+    <p>Data de hoje:</p>
+    <p>{{date}}</p>
+    <p>Data modelo 1: {{date | date}}</p>
+    <p>Data modelo 2: {{date | date:'dd/MM/yyyy':'pt' }}</p>
+    <p>Data modelo 3: {{date | date:'shortTime' }}</p>
+
+</div>
